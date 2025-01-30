@@ -20,6 +20,9 @@ app.use('/products',productRoutes)
 const authRoutes = require('./routes/auth.js');
 app.use('/auth',authRoutes);
 
+const bookRoutes = require('./routes/books.js');
+app.use('/api',bookRoutes);
+
 app.listen(3000,() => {
     console.log('My First Api')
 })
